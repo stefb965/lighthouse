@@ -18,7 +18,7 @@
 
 document.addEventListener('DOMContentLoaded', _ => {
   const background = chrome.extension.getBackgroundPage();
-  const defaultAggregations = background.getDefaultAggregations();
+  // const defaultAggregations = background.getDefaultAggregations();
   const defaultAggregationTags = background.getDefaultAggregationTags();
 
   const siteNameEl = window.document.querySelector('header h2');
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', _ => {
   };
 
   function getLighthouseVersion() {
-    return chrome.runtime.getManifest().version;
+    return background.getManifest().version;
   }
 
   function getChromeVersion() {
