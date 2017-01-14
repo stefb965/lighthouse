@@ -129,6 +129,14 @@ module.exports = [
       'uses-optimized-images': {
         score: false
       },
+      'deprecations': {
+        score: false,
+        extendedInfo: {
+          value: {
+            length: 4
+          }
+        }
+      }
     }
   }, {
     initialUrl: 'http://localhost:10200/online-only.html',
